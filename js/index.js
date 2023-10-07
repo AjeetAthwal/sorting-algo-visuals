@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             // Display the message in the HTML
-            document.getElementById('hello-message').innerText = data.message;
+            document.getElementById('hello-message').innerText = data.numbers;
         })
         .catch(error => console.error('Error fetching data:', error));
 });
